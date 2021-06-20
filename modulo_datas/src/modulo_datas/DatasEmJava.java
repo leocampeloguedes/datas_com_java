@@ -11,10 +11,39 @@ public class DatasEmJava {
 		// TODO Auto-generated method stub
 		
 		
+		
+		SimpleDateFormat formatDate = new SimpleDateFormat("dd/mm/yyyy");
+		
+		Date dataVencimentoBoleto = formatDate.parse("10/04/2021");
+		
+		Date dataAtualHoje = formatDate.parse("17/04/2021");
+		
+		if(dataVencimentoBoleto.after(dataAtualHoje)) {
+			System.out.println("Boleto não Vencido");
+		}else {
+			System.out.println("Boleto Vencido");
+		}
+		
+		
+		
+		
+		/*
 		Calendar calendar = Calendar.getInstance();
 		
+		System.out.println("Calendar milisegundos: " + calendar.getTimeInMillis());
+		System.out.println("Calendar do mes: " + calendar.get(Calendar.DAY_OF_MONTH));
+		System.out.println("Calendar do dia da semana: " + (calendar.get(Calendar.DAY_OF_WEEK)-1));
+		System.out.println("Calendar hora do dia: " + calendar.get(Calendar.HOUR_OF_DAY));
+		System.out.println("Calendar minuto do dia: " + calendar.get(Calendar.MINUTE));
+		System.out.println("Calendar segundos: " + calendar.get(Calendar.SECOND));
+		System.out.println("Calendar Ano: " + calendar.get(Calendar.YEAR));
 		
+		SimpleDateFormat dateformat = new SimpleDateFormat("dd/MM/yyyy hh:mm.ss");
+		//parse
+		System.out.println("Formato padrão e String: " + calendar.getInstance().getTime());
+		System.out.println("Formato padrão e String: " + dateformat.format(calendar.getTime()));
 		
+		*/
 		/*
 		
 		Date date = new Date();
